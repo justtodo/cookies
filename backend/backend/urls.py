@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("_home.urls"))
+    path('/cookie', include("cookie.urls"))
 ]
 
 if settings.DEBUG:
