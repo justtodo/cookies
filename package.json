@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend with django v0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justtodo/_backend.git"
+  },
+  "keywords": [
+    "root"
+  ],
+  "author": "UpCookies by Jupiters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justtodo/_backend/issues"
+  },
+  "homepage": "https://github.com/justtodo/_backend#readme",
+  "dependencies": {
+    "django": "^1.0.0",
+    "sqlite3": "^5.0.2"
+  }
+}
