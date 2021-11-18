@@ -4,11 +4,11 @@
   "description": "backend with django v0.1",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "start": " nodemon backend/manage.py runserver"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justtodo/_backend.git"
+    "url": "git+https://github.com/tcotidiane33/_backend.git"
   },
   "keywords": [
     "root"
@@ -21,6 +21,8 @@
   "homepage": "https://github.com/justtodo/_backend#readme",
   "dependencies": {
     "django": "^1.0.0",
+    "nodemon": "^2.0.15",
+    "python": "^0.0.4",
     "sqlite3": "^5.0.2"
   }
 }
