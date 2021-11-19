@@ -1,0 +1,7 @@
+<p>Store</p>
+{% block content %}
+	{% for p in produit %}
+		<p>{{ p.name }}
+		{{ p.price }}</p>
+	{% endfor %}
+{% endblock %}
