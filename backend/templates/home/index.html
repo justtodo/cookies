@@ -1,1 +1,8 @@
 <p>Home</p>
+{% block content %}
+	{% for p in premium %}
+		<h1>{{ p.name }}
+		{{ p.price }}	
+		</h1>
+	{% endfor %}		
+{% endblock %}

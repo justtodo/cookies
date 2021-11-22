@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Pack, Premium
+from .models import Premium, Pack
 
-admin.site.register(Pack)
 admin.site.register(Premium)
+admin.site.register(Pack)

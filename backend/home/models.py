@@ -19,7 +19,7 @@ class Pack(models.Model):
 class Premium(models.Model):
 	name = models.CharField(max_length=255)
 	price = models.IntegerField(default=0)
-	Packitems = models.ManyToManyField(Pack)
+	packs = models.ManyToManyField(Pack)
 
 	class Meta:
 		"""Meta definition for Premium."""

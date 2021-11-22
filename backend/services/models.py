@@ -36,6 +36,7 @@ class Experts(models.Model):
 	phone = models.CharField(max_length=25)
 	whatsapp = models.CharField(max_length=25)
 	telegram = models.CharField(max_length=25)
+	note = models.IntegerField(default=3)
 	# image = models.ImageField(upload_to="images/experts/", height_field=None, width_field=None)
 	satcks = models.ManyToManyField(Stacks)
 
