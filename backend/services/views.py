@@ -7,3 +7,7 @@ from .models import Competences, Stacks, Experts, Tarifs, Services
 
 def services(request):
     return render(request, 'services/index.html')
+
+def experts(request):
+    experts = Experts.objects.all()
+    return render(request, 'experts/index.html', {'experts':experts})

@@ -1,0 +1,8 @@
+<p>Experts</p>
+{% block content %}
+	{% for e in experts %}
+		<h1>{{ e.name }}
+		{{ e.surname }}</h1>
+		<p>{{ e.note }} etoils</p>	
+	{% endfor %}
+{% endblock %}
