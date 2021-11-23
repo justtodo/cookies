@@ -1,8 +1,8 @@
 <p>Experts</p>
 {% block content %}
 	{% for e in experts %}
-		<h1>Nom: {{ e.name }}
-		{{ e.surname }}</h1>
+		Nom: <a href="{{ e.get_absolute_url }}">{{ e.name }}</a>
+		{{ e.surname }}
 		<h2>Note: {{ e.note }} etoils</h2>	
 		{% for a in e.stacks.all %}
 			<h3>Stacks: {{ a.name }}</h3>

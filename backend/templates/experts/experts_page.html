@@ -1,0 +1,12 @@
+<p>Experts</p>
+{% block content %}
+	<h2>{{ experts.name }}
+	{{ experts.surname }}</h2>
+	<p>Description : {{ experts.description|slice:":355" }}</p>
+	<p>{{ experts.email }}</p>
+	<p>{{ experts.phone }}</p>
+	<p>{{ experts.note }}</p>
+	{% for a in experts.stacks.all %}
+		<p>stack: {{ a.name }}</p>
+	{% endfor %}
+{% endblock %}

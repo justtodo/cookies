@@ -32,6 +32,7 @@ class Stacks(models.Model):
 class Experts(models.Model):
 	name = models.CharField(max_length=255)
 	surname = models.CharField(max_length=255)
+	slug = models.SlugField(max_length=200, null=True)
 	email = models.EmailField(unique=True)
 	description = models.TextField()
 	phone = models.CharField(max_length=25)
@@ -46,6 +47,9 @@ class Experts(models.Model):
 
 		verbose_name = "Experts"
 		verbose_name_plural = "Experts"
+
+	def get_absolute_url(self):
+		return reverse('services:details_experts', args=[self.slug])
 
 	def __str__(self):
 		return self.name
