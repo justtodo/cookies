@@ -3,9 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-from .models import Premium, Pack
+from .models import Premium, Packs
 
 def home(request):
     premium = Premium.objects.all()
-    pack = Pack.objects.all()
-    return render(request, 'home/index.html', {'premium':premium, 'pack':pack})
+    return render(request, 'home/index.html', {'premium':premium})

@@ -4,5 +4,11 @@
 		<h1>{{ p.name }}
 		{{ p.price }}	
 		</h1>
-	{% endfor %}		
+		<p>
+			{% for a in p.packs.all %}
+				{{ a.name }}:
+				{{ a.items }}</p>
+			{% endfor %}
+		</p>
+	{% endfor %}
 {% endblock %}

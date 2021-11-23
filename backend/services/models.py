@@ -26,9 +26,6 @@ class Stacks(models.Model):
 		verbose_name = "Stacks"
 		verbose_name_plural = "Stacks"
 
-	def get_absolute_url(self):
-		return reverse('experts:satcks', args=[self.slug])
-
 	def __str__(self):
 		return self.name
 

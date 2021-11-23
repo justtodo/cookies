@@ -3,15 +3,15 @@ from django.urls import reverse
 
 # Create your models here.
 
-class Pack(models.Model):
+class Packs(models.Model):
 	name = models.CharField(max_length=255)
 	items = models.IntegerField(default=1)
 	
 	class Meta:
 		"""Meta definition for Pack."""
 
-		verbose_name = "Pack"
-		verbose_name_plural = "Pack"
+		verbose_name = "Packs"
+		verbose_name_plural = "Packs"
 
 	def __str__(self):
 		return self.name
@@ -19,7 +19,7 @@ class Pack(models.Model):
 class Premium(models.Model):
 	name = models.CharField(max_length=255)
 	price = models.IntegerField(default=0)
-	packs = models.ManyToManyField(Pack)
+	packs = models.ManyToManyField(Packs)
 
 	class Meta:
 		"""Meta definition for Premium."""
