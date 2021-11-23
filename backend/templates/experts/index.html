@@ -1,8 +1,16 @@
 <p>Experts</p>
 {% block content %}
 	{% for e in experts %}
-		<h1>{{ e.name }}
+		<h1>Nom: {{ e.name }}
 		{{ e.surname }}</h1>
-		<p>{{ e.note }} etoils</p>	
+		<h2>Note: {{ e.note }} etoils</h2>	
+		{% for a in e.stacks.all %}
+			<h3>Stacks: {{ a.name }}</h3>
+			<p>Competences:
+			{% for i in a.competences.all %}
+				{{ i.name }}
+			{% endfor %}
+			</p>
+		{% endfor %}
 	{% endfor %}
 {% endblock %}

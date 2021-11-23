@@ -18,12 +18,16 @@ class Competences(models.Model):
 class Stacks(models.Model):
 	name = models.CharField(max_length=255)
 	competences = models.ManyToManyField(Competences)
+	slug = models.SlugField(max_length=200, unique=True, null=True)
 
 	class Meta:
 		"""Meta definition for Stacks."""
 
 		verbose_name = "Stacks"
 		verbose_name_plural = "Stacks"
+
+	def get_absolute_url(self):
+		return reverse('experts:satcks', args=[self.slug])
 
 	def __str__(self):
 		return self.name
@@ -38,7 +42,7 @@ class Experts(models.Model):
 	telegram = models.CharField(max_length=25)
 	note = models.IntegerField(default=3)
 	# image = models.ImageField(upload_to="images/experts/", height_field=None, width_field=None)
-	satcks = models.ManyToManyField(Stacks)
+	stacks = models.ManyToManyField(Stacks)
 
 	class Meta:
 		"""Meta definition for Experts."""

@@ -9,5 +9,5 @@ def services(request):
     return render(request, 'services/index.html')
 
 def experts(request):
-    experts = Experts.objects.all()
+    experts = Experts.objects.all()    
     return render(request, 'experts/index.html', {'experts':experts})
