@@ -11,4 +11,4 @@ def store(request):
 
 def detail(request, slug):
     produit = get_object_or_404(Produit, slug=slug)
-    return render(request, 'store/detail.html', {'produit':produit})
+    return render(request, 'store/product_page.html', {'produit':produit})

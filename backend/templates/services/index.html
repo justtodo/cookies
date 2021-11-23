@@ -1,1 +1,14 @@
 <p>Services</p>
+{% block content %}
+	{% for s in services %}
+		<a href="{{ s.get_absolute_url }}"><h1>{{ s.name }}</h1></a>
+		{{ s.description }}
+		<p>
+			{% for d in s.tarifs.all %}
+				<p>{{ d.items }}
+				{{ d.name }}:
+				{{ d.price }} $</p>
+			{% endfor %}
+		</p>
+	{% endfor %}
+{% endblock %}

@@ -19,6 +19,7 @@ class Images(models.Model):
 class Produit(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255)
+    pub_date = models.DateTimeField('date published', null=True)
     image = models.ManyToManyField(Images)
     number = models.IntegerField(default=1)
     price = models.CharField(max_length=10)
@@ -29,9 +30,10 @@ class Produit(models.Model):
 
         verbose_name = "Produit"
         verbose_name_plural = "Produit"
+        ordering = ('-pub_date',)
 
     def get_absolute_url(self):
-        return reverse('produit:detail', args=[self.slug])
+        return reverse('store:detail', args=[self.slug])
 
     def __str__(self):
         return self.name

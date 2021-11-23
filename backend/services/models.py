@@ -66,7 +66,9 @@ class Tarifs(models.Model):
 
 class Services(models.Model):
 	name = models.CharField(max_length=255)
+	slug = models.SlugField(max_length=200, null=True)
 	description = models.TextField()
+	pub_date = models.DateTimeField('date published', null=True)
 	tarifs = models.ManyToManyField(Tarifs)
 	favoris = models.BooleanField(default=False)
 	experts = models.ManyToManyField(Experts)
@@ -76,6 +78,10 @@ class Services(models.Model):
 
 		verbose_name = "Services"
 		verbose_name_plural = "Services"
+		ordering = ('-pub_date',)
+
+	def get_absolute_url(self):
+		return reverse('services:details', args=[self.slug])
 
 	def __str__(self):
 		return self.name	
