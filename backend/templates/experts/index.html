@@ -1,3 +1,6 @@
+{% extends '../base.html' %}
+{% load static %}
+
 <p>Experts</p>
 {% block content %}
 	{% for e in experts %}
@@ -12,5 +15,6 @@
 			{% endfor %}
 			</p>
 		{% endfor %}
+	<br>
 	{% endfor %}
 {% endblock %}

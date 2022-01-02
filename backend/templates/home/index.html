@@ -2,20 +2,25 @@
 {% load static %}
 
 <link href="{% static 'css/index.css' %}" type="text/css" rel="stylesheet">
-<p>Home</p>
 {% block content %}
+<p>Home</p>
 	{% for p in premium %}
-		<h1>{{ p.name }}
-		{{ p.price }}	
+		<h1>{{ p.name }} de 
+		{{ p.price }} $
 		</h1>
+		<h2>Contenu</h2>
 		<p>
 			{% for a in p.packs.all %}
 				{{ a.name }}:
 				{{ a.items }}</p>
 			{% endfor %}
 		</p>
+		<br>
+		<hr>
+		<br>
 	{% endfor %}
+	Service favoris: 
 	{% for n in services %}
-		Service favoris: {{ n.name }}
+		{{ n.name }}
 	{% endfor %}
 {% endblock %}

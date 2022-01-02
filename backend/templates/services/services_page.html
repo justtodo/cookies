@@ -1,5 +1,8 @@
-<p>Details</p>
+{% extends '../base.html' %}
+{% load static %}
+
 {% block content %}
+<p>Details</p>
 	<h2>{{ services.name }}</h2>
 	<p>Description : {{ services.description|slice:":355" }}</p>
 	{% for s in services.tarifs.all %}
