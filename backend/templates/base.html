@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="{% static 'src/lib/css.css' %}" />
   <link rel="stylesheet" href="{% static 'src/lib/custom.css' %}" />
   <link rel="stylesheet" href="{% static 'src/boots.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="{% static 'src/lib/styles.css' %}" />
+  <link rel="stylesheet" href="{% static 'src/lib/log.css' %}" /> 
   <link rel="modulepreload" href="{% static 'src/lib/js.js' %}" />
   <script src="{% static 'src/lib/app.js' %}" type="module" defer></script>
   <script src="{% static 'src/lib/jquery-min.js' %}" type="module" defer></script>
@@ -20,6 +24,7 @@
   <meta property="og:language" content="fr" />
   <meta name="facebook:author" content="@upcookie.ci" />
   <link rel="stylesheet" href="{% static 'src/lib/print.css' %}" media="print" />
+  <link rel="search" type="application/opensearchdescription+xml" title="UpCookie"href="../../src/lib/opensearch.xml" />
   <link rel="search" type="application/opensearchdescription+xml" title="UpCookie" href="{% static 'src/lib/opensearch.xml' %}" />
 </head>
 <body>
@@ -182,6 +187,11 @@
     </div>
   </aside>
     <!-- section promotion -->
+     <!-- section promotion -->
+     <section class="promotion background">
+      <!-- <h3 class="up">UpCookie</h3> -->
+      <h3 class="cookie" id="target"></h3>
+    </section>
 
 {% block content %}
 {% endblock content %}
