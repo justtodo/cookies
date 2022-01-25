@@ -1,8 +1,21 @@
 {% extends '../base.html' %}
 {% load static %}
 
+<link href="{% static 'css/services-page.css' %}" type="text/css" rel="stylesheet">
+
+
 {% block content %}
-<p>Details</p>
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<section class="services-page">
+	<!-- Code Here -->
+	<h2>Services page</h2>
+</section>
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- <p>Details</p>
 	<h2>{{ services.name }}</h2>
 	<p>Description : {{ services.description|slice:":355" }}</p>
 	{% for s in services.tarifs.all %}
@@ -12,5 +25,6 @@
 	{% for s in services.experts.all %}
 		<p>Expert: {{ s.name }}
 		{{ s.note }} etoils</p>
-	{% endfor %}
+	{% endfor %} -->
+	
 {% endblock %}

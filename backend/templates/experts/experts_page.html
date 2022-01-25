@@ -1,12 +1,20 @@
 {% extends '../base.html' %}
 {% load static %}
 
-<link href="{% static 'css/index.css' %}" type="text/css" rel="stylesheet">
+<link href="{% static 'css/experts-page.css' %}" type="text/css" rel="stylesheet">
 
+{% block content %}
 
+<!-- -------------------------------------------------------------------------------------- -->
 
+<section class="experts-page">
+	<!-- Code Here -->
+	<h2>Experts page</h2>
+  </section>
+  
+  <!-- -------------------------------------------------------------------------------------- -->
 
-<p>Experts</p>
+<!-- <p>Experts</p>
 {% block content %}
 	<h2>{{ experts.name }}
 	{{ experts.surname }}</h2>
@@ -17,4 +25,6 @@
 	{% for a in experts.stacks.all %}
 		<p>stack: {{ a.name }}</p>
 	{% endfor %}
+{% endblock %} -->
+
 {% endblock %}

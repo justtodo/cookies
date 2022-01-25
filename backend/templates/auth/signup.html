@@ -1,71 +1,16 @@
 {% extends '../base.html' %}
 {% load static %}
 
-<link href="{% static 'css/index.css' %}" type="text/css" rel="stylesheet">
+<link href="{% static 'css/signup.css' %}" type="text/css" rel="stylesheet">
 
 {% block content %}
 
 <!-- -------------------------------------------------------------------------------------- -->
 
 
-<section class="login__content">
-    <div class="course-hero">
-
-        <h1>Créer mon <strong> profil</strong></h1>
-    </div>
-   <hr id="hr">
-   <form action="submit">
-
-       <div class="form__content">
-           
-           <div class="nom">
-               <label for="nom">Nom</label>
-               <input type="text" id="nom">
-           </div>
-           <div class="email">
-               <label for="email">Email</label>
-               <input type="email" id="email" placeholder="monemail@demo.fr">
-           </div>
-           <div class="adresse">
-               <label for="adresse">Adresse</label>
-               <input type="text" id="adresse">
-           </div>
-           <div class="prenom">
-               <label for="prenom">Prénom</label>
-               <input type="text" id="prenom">
-           </div>
-           <div class="phone">
-               <label for="phone">Téléphone (mobile)</label>
-               <input type="text" id="phone">
-           </div>
-           <div class="ville">
-               <label for="ville">Ville</label>
-               <input type="text" id="ville">
-           </div>
-           <div class="bio_container">
-               <label>Bio</label>
-               <textarea class="bio" rows="7"></textarea>
-           </div>
-           <div class="code_postal">
-               <label for="code_postal">Code Postal</label>
-               <input type="text" id="code_postal">
-           </div>
-       </div>
-
-       <div class="newsletter">
-           <input type="checkbox" id="newsletter">
-           <span></span>
-           <label for="newsletter">Je souhaite recevoir la newsletter</label>
-       </div>
-       <div class="newsletter_partenaires">
-           <input type="checkbox" id="newsletter_partenaires">
-           <span></span>
-           <label for="newsletter_partenaires">Je souhaite recevoir la newsletter des partenaires</label>
-       </div>
-
-       <button type="submit">Enregistrer </button>
-
-   </form>
+<section class="signup">
+  <!-- Code Here -->
+  <h2>Signup</h2>
 </section>
 
 

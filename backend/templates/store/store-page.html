@@ -1,25 +1,24 @@
 {% extends "../base.html" %}
 {% load static %}
 
-<link href="{% static 'css/store.css' %}" type="text/css" rel="stylesheet">
-
+<link href="{% static 'css/store-page.css' %}" type="text/css" rel="stylesheet">
 
 {% block content %}
 <!-- -------------------------------------------------------------------------------------- -->
 
-<section class="store">
+<section class="store-page">
 	<!-- Code Here -->
-	<h2>Store</h2>
+	<h2>Store page</h2>
 </section>
 
 <!-- -------------------------------------------------------------------------------------- -->
 
-<!-- <p>Store</p>
-
-	{% for p in produit %}
-		<a href="{{ p.get_absolute_url }}">{{ p.name }}</a>
-		{{ p.price }}
-	{% endfor %}
-	<br> -->
+<!-- 
+<p>Details</p>
+	<p>{{ produit.name }}</p>
+	<p>{{ produit.number }}</p>
+	<p>{{ produit.price }}</p>
+	<p>{{ produit.description }}</p>
+	 -->
 
 {% endblock %}
