@@ -1,23 +1,110 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Fr-fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=cookie_version_béta">
+  <title>HOME PAGE COOKIE</title>
+  <link href="{% static 'css/base.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'src/bootstrap.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'js/base.js' %}" type="text/css" rel="stylesheet">
+
 </head>
 <body>
 
   <!-- Code Here (Header)-->
-  <p>Base header</p>
+  <!----------------------------------- start header ----------------------------------->
+  <div class="header">
+    <div class="container">
+      <div class="container_fluid">
+        <div class="logo">
+          <img src="{% static './assets/collections/servives/3.png' %}" alt="logo" style="width: 30%;height: 30%; border-radius: 50%;">
+        </div>
+        <div class="nav_bar">
+          <ul class="nav_menu">
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Acceuil</a></li>
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Services</a></li>
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Stores</a></li>
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Experts</a></li>
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Blogs</a></li>
+            <li class="nav_link">
+              <span></span>
+              <a href="http://#" target="_blank" class="links" rel="noopener noreferrer">Forums</a></li>
+          </ul>
+        </div>
+        <div class="shopping">
+          <div class="search">
+            <form action="" method="get">
+              <input type="text" name="button recherche" id="btn-search" placeholder="rechercher ici !" autocomplete="additional-name" autofocus >
+            <button class="btn btn-primary"><span>loupe</span></button>
+            </form>
+          </div>
+          <div class="cart">
+            <span>Panier_d'achat</span>
+          </div>
+        </div>
+        <div class="log_sign">
+          <div class="connexion">
+            <a href="http://#" target="_blank" rel="noopener noreferrer">CONNEXION</a></div>
+          <div class="inscription">
+            <a href="http://#" target="_blank" rel="noopener noreferrer">INSCRIPTION</a></div>
+        </div>
+      </div>
+
+      <!-- burger -->
+    </div>
+  </div>
+  <!----------------------------------- end header ----------------------------------->
   
   {% block content %}
   {% endblock content %}
 
   <!-- Code Here (Footer)-->
-  <p>Base< footer</p>
+  
+  <!----------------------------------- start footer ----------------------------------->
+  <div class="footer">
+    <div class="container">
+      <div class="container_fluid">
+        <div class="grid_about">
+          <p>a_propos de cookie</p>
+          <p>une bande de p'tit developpeurS de sciance informatique//</p>
+          <em>avec deux amies qui refuse absolument de codée... quelle triste sort</em>
+          <h2>avec deux ans d'experience // il decide d'implement leur premiere application </h2>
+          <ul class="about">
+            <li class="about_link"><a href="http://">comment nous suivre !</a></li>
+            <li class="about_link"><a href="http://">comment nous poursuivre !</a></li>
+            <li class="about_link"><a href="http://">comment nous repoursuivr !</a></li>
+            <li class="about_link"><a href="http://">comment nous planté !</a></li>
+          </ul>
+        </div>
+        <div class="grid_logo">
+          <img src="{% static './assets/collections/servives/3.png' %}" alt="logo" style="width: 14%;height: 14%; border-radius: 50%;">
+
+        </div>
+        <div class="grid_contact">
+          <ul class="contact">
+            <li class="link">github</li>
+            <li class="links">code-geek</li>
+            <li class="links">code-makabet</li>
+            <li class="links">code-clash</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------- end footer ----------------------------------->
 
 </body>
 </html>
