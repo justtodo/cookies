@@ -1,0 +1,149 @@
+* {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+body {
+	display: flex;
+}
+
+a {
+	margin: 0;
+	padding: 0;	
+}
+
+aside {
+	left: 150px;
+	top: 200px;
+	position: fixed;
+	overflow: hidden;	
+	max-width: 100px;
+	max-height: 500px;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	background-color: darkorange;
+}
+.facebook a img, .twitter a img, .instagram a img, .linkedin a img, .gmail a img  {	
+	max-width: 20px;
+	color: white;
+}
+.facebook a img:hover, .twitter a img:hover, .instagram a img:hover, .linkedin a img:hover, .gmail a img:hover {
+	border: 2px solid black;
+}
+
+
+aside, .aside-content, .social
+, .facebook, .twitter, .instagram, .linkedin, .gmail
+,.facebook a img, .twitter a img, .instagram a img, .linkedin a img, .gmail a img {
+	margin: 0;
+	padding: 5px;
+}
+
+/*------------------------------*/
+
+main {
+	margin-left: 20%;	
+}
+
+
+.blog-header {
+	margin: 0;	
+	display: grid;
+	justify-content: space-around;
+	align-items: center;	
+}
+
+.blog-header h2 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.blog-header p {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	opacity: 0.7;
+}
+
+.subscribe {
+	margin: 0;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.subscribe input {
+	width: 300px;
+	border: 1px solid darkorange;
+	transition: border 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+.subscribe a {
+	background-color: darkorange;
+	padding: 10px;
+	color: black;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.subscribe a:hover {
+	background-color: orange;
+}
+
+.blog-content {
+	background: #fafafa !important;
+}
+
+.blog-item {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.blog-item img {
+	width: 40%;
+	height: 40%;
+}
+
+.item-detail {
+	padding: 0;
+	margin: 0;
+}
+
+.item-detail a, .item-detail h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.item-title {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+.item-title:hover {
+	text-decoration: underline;
+}
+
+.reference {
+	font-size: 15px;
+	color: gray;
+	margin: 0;	
+}
+
+.item-detail p {
+	opacity: 0.9;
+	margin: 0;
+	margin-right: 5%;
+	padding: 5px;
+	padding-left: 0;
+}
+
+.read-more {
+	margin-left: 5px;
+	color: darkorange;
+}
