@@ -1,0 +1,25 @@
+.illustration_title{
+    /* Strategy */
+
+/* Heading 5 */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height, or 150% */
+
+
+/* Dark blue */
+
+color: #282938;
+
+border: 1px solid #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* our_project */
+.our_project img{
+    max-width:100%; border-radius: 10px; box-shadow: 2px 3px 1px 2px #ccc;
+}

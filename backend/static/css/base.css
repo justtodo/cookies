@@ -1,0 +1,72 @@
+*{
+    margin: 6px;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.container .header_body {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 10% 45% 20% 20%;
+    justify-content: space-around;
+}
+.container_fluid .nav_bar .nav_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.container_fluid .nav_bar ul li {
+    /* width: 33px; */
+    border: 1px solid red;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(216, 191, 216, 0.123);
+    font-weight: bolder;
+    list-style: none;
+}
+.container_fluid .nav_bar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .container_fluid .log_sign{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    justify-content: space-around;
+}
+.container .container_fluid .shopping {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+}
+.container .container_fluid .shopping , .container .container_fluid .log_sign, .container .container_fluid .nav_bar, .container .container_fluid .logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .container_fluid .shopping .search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+.footer{
+    border: 2px solid green;
+}
+.container .footer_body{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    gap: 4px;
+}

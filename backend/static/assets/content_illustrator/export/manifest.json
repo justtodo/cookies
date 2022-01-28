@@ -1,0 +1,11 @@
+{
+  "name": "export",
+  "id": "1068102893500771415",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "ui.html"
+}

@@ -8,7 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=cookie_version_béta">
   <title>HOME PAGE COOKIE</title>
   <link href="{% static 'css/base.css' %}" type="text/css" rel="stylesheet">
-  <link href="{% static 'src/bootstrap.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/blog.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/contacts.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/experts-page.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/experts.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/login.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/services-page.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/services.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/signup.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/store-page.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/store.css' %}" type="text/css" rel="stylesheet">
+
+  <link href="{% static 'css/home.css' %}" type="text/css" rel="stylesheet" />
+  <!-- <link href="{% static 'src/bootstrap.css' %}" type="text/css" rel="stylesheet"> -->
   <link href="{% static 'js/base.js' %}" type="text/css" rel="stylesheet">
 
 </head>
@@ -18,9 +30,9 @@
   <!----------------------------------- start header ----------------------------------->
   <div class="header">
     <div class="container">
-      <div class="container_fluid">
+      <div class="container_fluid header_body">
         <div class="logo">
-          <img src="{% static './assets/collections/servives/3.png' %}" alt="logo" style="width: 30%;height: 30%; border-radius: 50%;">
+          <img src="{% static './assets/collections/servives/3.png' %}" alt="logo" style="width: 12%;height: 12%; border-radius: 50%;">
         </div>
         <div class="nav_bar">
           <ul class="nav_menu">
@@ -52,7 +64,7 @@
             </form>
           </div>
           <div class="cart">
-            <span>Panier_d'achat</span>
+            <span><i class="fas fa-dolly"></i> Panier_d'achat</span>
           </div>
         </div>
         <div class="log_sign">
@@ -76,7 +88,7 @@
   <!----------------------------------- start footer ----------------------------------->
   <div class="footer">
     <div class="container">
-      <div class="container_fluid">
+      <div class="container_fluid display-flex footer_body">
         <div class="grid_about">
           <p>a_propos de cookie</p>
           <p>une bande de p'tit developpeurS de sciance informatique//</p>
